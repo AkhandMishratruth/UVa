@@ -21,7 +21,7 @@ public class p11517 {
                         dp[i] = dp[i-coin] + 1;
                 }
             }
-            for(int ret = price; ret<=10000; ++ret) {                
+            for(int ret = price; ret<=10000; ++ret) {
                 if(dp[ret]>-1){
                     p.println(ret + " " + dp[ret]);
                     break;
