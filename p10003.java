@@ -20,7 +20,7 @@ public class p10003 {
             for(int i=0;i<dp.length;i++)
                 for(int j=0;j<dp[0].length;j++)
                     dp[i][j] = -1;
-            System.out.println("The minimum cutting is"+cost(0, n+1)+".");
+            System.out.println("The minimum cutting is "+cost(0, n+1)+".");
         }
     }
     
@@ -34,6 +34,7 @@ public class p10003 {
         for(int i=left+1;i<right;i++){
             temp = Math.min(temp, cost(left, i) + cost(i, right) + ar[right] - ar[left]);
         }
+        ArrayList<Interger> ar;
         dp[left][right] = temp;
         return temp;
     }
