@@ -4,7 +4,7 @@ import java.io.PrintWriter;
 import java.util.*;
 import java.io.*;
 
-class p11340 {
+public class p11340 {
     public static void main(String args[]) throws Exception {
         FastReader in = new FastReader();
         PrintWriter pr = new PrintWriter(System.out);
